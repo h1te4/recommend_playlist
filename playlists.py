@@ -1,9 +1,11 @@
 import json
+import random
 
 
 def load(file_path):
     with open(file_path, "r", encoding="utf-8") as file:
         return json.load(file)
+
 
 def recommend(ontology, жанр, настроение=None, время_суток=None, популярность=None):
     результаты = []
@@ -19,7 +21,7 @@ def recommend(ontology, жанр, настроение=None, время_суто
 
     if настроение and len(результаты) < 2:
         for другой_жанр, варианты in ontology.items():
-            if другой_жанр == жанр:
+            if другой_жанр == жанр or другой_жанр == "random":
                 continue
             фильтрованные = [вариант for вариант in варианты if вариант["mood"].lower() == настроение.lower()]
             if время_суток:
@@ -31,11 +33,15 @@ def recommend(ontology, жанр, настроение=None, время_суто
             результаты.extend(фильтрованные)
 
     if not результаты:
-        return "не найдено подходящих вариантов"
+        return "Не найдено подходящих вариантов. Случайный плейлист:\n" + "\n".join(
+            f"- {song}" for song in random.sample(ontology['random'], 5))
+
     вывод = "Рекомендованные песни:\n"
     for вариант in результаты:
         вывод += "- " + ", ".join(вариант["songs"]) + "\n"
     return вывод
+
+
 ontology = load("playlists.json")
 жанр = input("Введите жанр плейлиста (рок, поп, электронная и т.д.): ").strip().lower()
 настроение = input("Введите настроение (энергичное, спокойное, веселое и т.д.): ").strip().lower() or None

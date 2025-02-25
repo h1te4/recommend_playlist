@@ -76,5 +76,17 @@
       "popularity": "альтернативное",
       "songs": ["Flume - Never Be Like You", "Disclosure - Latch"]
     }
+  ],
+  "random": [
+    "Michael Jackson - Billie Jean",
+    "The Beatles - Hey Jude",
+    "Eminem - Lose Yourself",
+    "Coldplay - Viva La Vida",
+    "The Weeknd - Blinding Lights",
+    "Queen - Bohemian Rhapsody",
+    "Ed Sheeran - Shape of You",
+    "Daft Punk - Get Lucky",
+    "Adele - Rolling in the Deep",
+    "Imagine Dragons - Radioactive"
   ]
 }
