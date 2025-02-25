@@ -1,0 +1,80 @@
+{
+  "рок": [
+    {
+      "mood": "энергичное",
+      "time_of_day": "утро",
+      "popularity": "хиты",
+      "songs": ["AC/DC - Thunderstruck", "Queen - We Will Rock You"]
+    },
+    {
+      "mood": "спокойное",
+      "time_of_day": "вечер",
+      "popularity": "альтернативное",
+      "songs": ["Bon Jovi - Always", "Scorpions - Wind of Change"]
+    },
+    {
+      "mood": "веселое",
+      "time_of_day": "день",
+      "popularity": "хиты",
+      "songs": ["Guns N' Roses - Sweet Child o' Mine", "Aerosmith - Dream On"]
+    }
+  ],
+  "поп": [
+    {
+      "mood": "веселое",
+      "time_of_day": "день",
+      "popularity": "хиты",
+      "songs": ["Dua Lipa - Levitating", "Katy Perry - Firework"]
+    },
+    {
+      "mood": "спокойное",
+      "time_of_day": "вечер",
+      "popularity": "альтернативное",
+      "songs": ["Adele - Hello", "Sam Smith - Stay With Me"]
+    },
+    {
+      "mood": "энергичное",
+      "time_of_day": "утро",
+      "popularity": "хиты",
+      "songs": ["Bruno Mars - 24K Magic", "Justin Timberlake - Can't Stop the Feeling"]
+    },
+    {
+      "mood": "спокойное",
+      "time_of_day": "утро",
+      "popularity": "хиты",
+      "songs": ["Billie Eilish - Ocean Eyes", "Lorde - Royals"]
+    }
+  ],
+  "электронная": [
+    {
+      "mood": "энергичное",
+      "time_of_day": "ночь",
+      "popularity": "хиты",
+      "songs": ["Daft Punk - One More Time", "The Chemical Brothers - Galvanize"]
+    },
+    {
+      "mood": "спокойное",
+      "time_of_day": "вечер",
+      "popularity": "альтернативное",
+      "songs": ["Moby - Porcelain", "Massive Attack - Teardrop"]
+    },
+    {
+      "mood": "веселое",
+      "time_of_day": "день",
+      "popularity": "альтернативное",
+      "songs": ["Avicii - Wake Me Up", "Zedd - Clarity"]
+    },
+    {
+      "mood": "спокойное",
+      "time_of_day": "день",
+      "popularity": "хиты",
+      "songs": ["Porter Robinson - Sad Machine", "ODESZA - A Moment Apart"]
+    },
+    {
+      "mood": "энергичное",
+      "time_of_day": "утро",
+      "popularity": "альтернативное",
+      "songs": ["Flume - Never Be Like You", "Disclosure - Latch"]
+    }
+  ]
+}
